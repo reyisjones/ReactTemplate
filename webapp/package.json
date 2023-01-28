@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "run-s clean",
+    "build": "parcel build src/index.html --no-source-maps",
+    "clean": "rimraf ./dist",
     "start": "parcel src/index.html --open"
   },
   "keywords": [],
@@ -13,12 +16,15 @@
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.5",
+    "rimraf": "^4.1.2",
     "typescript": "^4.9.4"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.57.1",
     "scheduler": "^0.23.0"
   }
 }
