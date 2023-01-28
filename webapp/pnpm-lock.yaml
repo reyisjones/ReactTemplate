@@ -6,11 +6,13 @@ specifiers:
   parcel-bundler: ^1.12.5
   react: ^18.2.0
   react-dom: ^18.2.0
+  scheduler: ^0.23.0
   typescript: ^4.9.4
 
 dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  scheduler: 0.23.0
 
 devDependencies:
   '@types/react': 18.0.27
