@@ -1,9 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './assets/index.scss';
 
-const Application: React.FC<unknown> = () => (
-  <><h1>Welcome</h1><div>Template using React with Typescript</div></>
-);
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to My Blog!!!!</h1>
+    </div>
+  );
+}
 
-render(<Application />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(<App />);
