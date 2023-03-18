@@ -3,15 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'standard'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/recommended-requiring-type-checking', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'standard', 'plugin:storybook/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
@@ -25,17 +17,14 @@ module.exports = {
     project: './tsconfig.json',
     sourceType: 'module'
   },
-  overrides: [
-  ],
-  plugins: [
-    'react',
-    'react-hooks',
-    '@typescript-eslint'
-  ],
+  overrides: [],
+  plugins: ['react', 'react-hooks', '@typescript-eslint'],
   settings: {
-    react: { version: 'detect' }
+    react: {
+      version: 'detect'
+    }
   },
   rules: {
-    semi: [ 'error', 'always' ]
+    semi: ['error', 'always']
   }
-}
+};
